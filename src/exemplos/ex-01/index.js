@@ -1,12 +1,12 @@
 import{View, Text} from 'react-native'
 
-import styles from './styles'
+import styles from '../../atividade1/att01/styles'
 
 function Exemplo01 (){
     return(
-        <View style={styles.conteiner}>
-            <Text styles={styles.titulo}>Exemplo 1</Text>
-            <Text styles={styles.texto}>
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Exemplo 1</Text>
+            <Text style={styles.texto}>
                 aula de react native com expo
             </Text>
         </View>

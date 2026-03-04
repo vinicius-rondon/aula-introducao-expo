@@ -3,10 +3,12 @@ import { StyleSheet, View } from 'react-native';
 
 import Exemplo01 from './src/exemplos/ex-01';
 
+import Att01 from './src/atividade1/att01';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo01/>
+      <Att01/>
       <StatusBar style="auto" />
     </View>
   );
@@ -15,7 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#971d1d',
+    backgroundColor: '#3cff00',
     padding: 16,
     // alignItems: 'center',
     // justifyContent: 'center',

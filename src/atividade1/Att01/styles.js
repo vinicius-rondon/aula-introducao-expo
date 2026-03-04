@@ -22,8 +22,33 @@ const style = StyleSheet.create({
         fontSize: 18,
         fontStyle: 'italic',
         fontFamily: 'sans-serif-condensed',
+         width: '100%',
+        textAlign: 'center',
+        },
+
+    texto2:{
+        fontSize: 18,
+        fontStyle: 'italic',
+        fontFamily: 'sans-serif-condensed',
+        width: '100%',
+        marginTop: 50,
+        color: '#F00',
+        textAlign: 'right',
+    },
+    texto3:{
+        marginTop: 260 ,
+        fontSize: 64 ,
+
+    },
+    textoPreto: {
+    color: '#000'
+    },
+
+    textoVermelho: {
+    color: '#F00'
+    },
+
         
-    }
 });
 
 export default style
