@@ -1,25 +1,25 @@
 import {StyleSheet } from 'react-native'
-
+import { RFPercentage} from "react-native-responsive-fontsize";
 
 const style = StyleSheet.create({
    container :{
         backgroundColor: '#fffb00',
         // margin : 20,
-        padding: 20,
+        padding: RFPercentage(2),
         flex: 1,
-        borderRadius: 20,
+        borderRadius: RFPercentage(2),
 
     },
     titulo: {
-        fontSize: 30,
+        fontSize: RFPercentage(3),
         width: '100%',
         textAlign: 'center',
         fontWeight: 'bold',
-        marginBottom: 50,
+        marginBottom: RFPercentage(5),
         fontFamily: 'sans-serif-light',
     },
     texto:{
-        fontSize: 18,
+        fontSize: RFPercentage(2),
         fontStyle: 'italic',
         fontFamily: 'sans-serif-condensed',
          width: '100%',
@@ -27,17 +27,17 @@ const style = StyleSheet.create({
         },
 
     texto2:{
-        fontSize: 18,
+        fontSize: RFPercentage(2),
         fontStyle: 'italic',
         fontFamily: 'sans-serif-condensed',
         width: '100%',
-        marginTop: 50,
+        marginTop: RFPercentage(5),
         color: '#F00',
         textAlign: 'right',
     },
     texto3:{
-        marginTop: 260 ,
-        fontSize: 64 ,
+        marginTop: RFPercentage(26) ,
+        fontSize: RFPercentage(6.4),
 
     },
     textoPreto: {

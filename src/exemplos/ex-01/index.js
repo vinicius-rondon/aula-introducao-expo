@@ -1,6 +1,6 @@
 import{View, Text} from 'react-native'
 
-import styles from '../../atividade1/att01/styles'
+import styles from './styles'
 
 function Exemplo01 (){
     return(
