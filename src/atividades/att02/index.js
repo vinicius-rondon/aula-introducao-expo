@@ -1,28 +1,41 @@
-import { View, Text, Image } from 'react-native'; 
+import { View, Text} from 'react-native';
 
 import styles from './styles';
 
-import img from '../../../assets/002-1-react-native.png'; 
+import azul from '../../../assets/brasilAzul.jpg';
+import amarela from '../../../assets/brasilAmarela.png';
+import preta from '../../../assets/brasilPreta.jpg';
 
-import Mensagem from './mensagens';
+import Card from './card';
 
-function att02 () {
-    return(
+function Att02() {
+    return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Exemplo 2</Text>
-            <Image source={img} style={styles.imagem} /> 
+            <Text style={styles.titulo}>camisas de time</Text>
 
-            <Mensagem titulo={'Sucesso'}>
-               Valor enviado corretamente!
-            </Mensagem>
-            <Mensagem titulo={'Erro'}>
-                O programa não respondeu como esperado!
-            </Mensagem>
-            <Mensagem titulo={'Alerta'}>
-                Você não pode fazer isso!
-            </Mensagem>
+        <Card
+          titulo={'Camisa Brasil Amarela Versão Jogador'}
+          img={amarela}
+          descricao={'Principal Camisa Da Seleção Brasileira'}
+          preco={'R$ 799,99'}
+        />
+        <Card
+          titulo={'Camisa Brasil Azul Versão Torcedor '}
+          img={azul}
+          descricao={'Segunda Camisa Da Seleção Brasileira'}
+          preco={'R$ 399,99'}
+        />
+        <Card
+          titulo={'Camisa Do Brasil Preta Versão Fã '}
+          img={preta}
+          descricao={'Camisa Da Seleção Versão Nordeste '}
+          preco={'R$ 99,99'}
+        />
+          
+
+
         </View>
     );
 }
 
-export default Mensagem;
+export default Att02;
