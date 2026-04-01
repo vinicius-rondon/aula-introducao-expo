@@ -5,11 +5,12 @@ import styles from './styles';
 function Card({ titulo, preco, descricao,img }) {
     return (
         <View style={styles.container}>
+            <Image source={img} style={styles.imagem}></Image>
+          <View>
             <Text style={styles.titulo}>{titulo}</Text>
-            <Image source={img} style={styles.imagem} />
             <Text style={styles.descricao}>{descricao}</Text>
             <Text style={styles.preco}>{preco}</Text>
-
+          </View>
         </View>
     );
 }

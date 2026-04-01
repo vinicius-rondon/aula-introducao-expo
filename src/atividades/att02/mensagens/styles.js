@@ -4,8 +4,8 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     container: {
-       // flex: 'row' ,
-       // justifyContent: 'space-between',
+        flexDirection:'row',
+        justifyContent:'flex-start',
         borderWidth: RFPercentage(0.5), 
         borderColor: 'darkslategrey', 
         padding: RFPercentage(1.5), 
@@ -40,11 +40,6 @@ const styles = StyleSheet.create({
         // filter: 'contrast(50%)', 
         // filter: 'invert(100%)', 
     }, 
-    conteinerItens:{
-
-
-    },
-
 });
 
 export default styles;
