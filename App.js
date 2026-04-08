@@ -8,12 +8,14 @@ import { StyleSheet, View } from 'react-native';
 //import Att02 from './src/atividades/att-02';
 import Att03 from './src/atividades/Att03';
 import Att04 from './src/atividades/Att04'
+import Att05 from './src/atividades/Att05'
+
 //para importar os exemplos escreva exatamente como esta no arquivo q esta em sua respectiva pasta 
 //nao esquece de mudar embaixo do view
 export default function App() {
   return (
     <View style={styles.container}>
-      <Att04/>
+      <Att05/>
       <StatusBar style="auto" />
     </View>
   );

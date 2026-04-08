@@ -16,6 +16,24 @@ const styles = StyleSheet.create(
         }, 
         txt: {
             fontSize: RFPercentage(2.5), 
+            marginBottom: RFPercentage(2),
+        }, 
+         txtNome: {
+            fontSize: RFPercentage(2.5), 
+            marginBottom: RFPercentage(0.5),
+            textAlign: 'left',
+            alignSelf: 'flex-start',
+            marginLeft: RFPercentage(5),
+            fontFamily: 'sans-serif',
+        }, 
+
+        txtSobreNome: {
+            fontSize: RFPercentage(2.5), 
+            marginBottom: RFPercentage(0.5),
+            textAlign: 'left',
+            alignSelf: 'flex-start',
+            marginLeft: RFPercentage(5),
+            fontFamily: 'sans-serif',
         }, 
         input: {
             borderWidth: RFPercentage(0.5), 

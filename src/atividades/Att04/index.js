@@ -5,48 +5,45 @@ import styles from './styles';
 
 export default function Exemplo04() {
 
-    const [texto, setTexto] = useState('');
-    const [txt2, setTxt2] = useState('Valor inicial'); 
-    const [mensagem, setMensagem] = useState(''); 
+    const [nome, setNome] = useState('');
+    const [sobreNome, setSobreNome] = useState('');
+    const [nomeCompleto, setNomeCompleto] = useState('');
 
-    function handleExibeMensagem() {
-        setMensagem(txt2);
-        setTxt2('');
+    function handlExibeNome() {
+        setNomeCompleto(`${nome} ${sobreNome}`);
+        setNome('');
+        setSobreNome('');
     }
 
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Exemplo 4</Text>
+            <Text style={styles.titulo}>Atividade 4</Text>
+            <Text style={styles.txt}>{nomeCompleto}</Text>
 
-            <Text style={styles.txt}>{texto}</Text>
-
+            <Text style={styles.txtNome}>nome</Text>
             <TextInput
-                onChangeText={setTexto}
-                placeholder='texto de fundo'
-                keyboardType='ascii-capable'
-                // editable={false}
-                // multiline
-                // numberOfLines={4}
-                maxLength={7}
-                // secureTextEntry 
+                onChangeText={setNome}
+                value={nome}
+                placeholder=''
+                maxLength={10}
                 style={styles.input}
             />
 
-            <Text style={styles.txt}>{mensagem}</Text>
+            <Text style={styles.txtSobreNome}>sobrenome</Text>
             <TextInput
-                value={txt2} 
-                onChangeText={setTxt2}
-                placeholder='digite sua mensagem'
-                keyboardType='ascii-capable'                
+                onChangeText={setSobreNome}
+                value={sobreNome}
+                placeholder=''
+                maxLength={10}
                 style={styles.input}
             />
 
-            <TouchableOpacity 
-                style={styles.botao} 
-                onPress={() => handleExibeMensagem()}
+            <TouchableOpacity
+                style={styles.botao}
+                onPress={() => handlExibeNome()}
             >
-                <Text style={styles.txtBotao}>Exibir texto</Text>
-            </TouchableOpacity> 
+                <Text style={styles.txtBotao}>Exibir nome completo</Text>
+            </TouchableOpacity>
 
         </View>
     );
