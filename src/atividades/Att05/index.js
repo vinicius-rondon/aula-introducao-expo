@@ -14,6 +14,7 @@ export default function Index() {
   }
 
   return (
+    
     // ❌ antes: vários elementos soltos
     // ✅ agora: tudo dentro de uma View (obrigatório no React)
     <View>
