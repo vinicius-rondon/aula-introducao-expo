@@ -18,7 +18,7 @@ import Att05 from './src/atividades/Att05'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo07/>
+      <Att05/>
       <StatusBar style="auto" />
     </View>
   );
