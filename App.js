@@ -11,14 +11,15 @@ import Exemplo07 from './src/exemplos/ex07';
 import Att03 from './src/atividades/Att03';
 import Att04 from './src/atividades/Att04'
 import Att05 from './src/atividades/Att05'
-
+import Att06 from './src/atividades/Att06'
+import Att09 from './src/atividades/Att09'
 
 //para importar os exemplos escreva exatamente como esta no arquivo q esta em sua respectiva pasta 
 //nao esquece de mudar embaixo do view
 export default function App() {
   return (
     <View style={styles.container}>
-      <Att05/>
+      <Att09/>
       <StatusBar style="auto" />
     </View>
   );
